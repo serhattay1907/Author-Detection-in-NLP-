@@ -14,11 +14,11 @@ Original: SERHAT_TAY_Author_Detection_using_NLP.ipynb
 
 # Cell 1
 #this is where we download the dataset
-!gdown https://drive.google.com/uc?id=120-9PFzIvWy1SVHpTiOO6_7vOyMpXZEy
+# (notebook-only) !gdown https://drive.google.com/uc?id=120-9PFzIvWy1SVHpTiOO6_7vOyMpXZEy
 
 # Cell 2
 # Plus this is where we unzip the content as below
-!unzip /content/30Columnists.zip -d /content
+# (notebook-only) !unzip /content/30Columnists.zip -d /content
 
 # Cell 3
 # Read sub-dirs as author names, i.e. labels
@@ -752,7 +752,7 @@ print(wrapped_text)
 
 # Cell 76
 # Install Hugging Face libraries if not installed before
-!pip install transformers datasets
+# (notebook-only) !pip install transformers datasets
 
 # Cell 77
 from transformers import pipeline
@@ -771,7 +771,7 @@ print(wrapped_text)
 
 
 # Cell 79
-!pip install einops
+# (notebook-only) !pip install einops
 
 # Cell 80
 # Use a pipeline as a high-level helper
