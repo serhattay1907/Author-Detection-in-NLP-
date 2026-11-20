@@ -14,6 +14,12 @@ Identifies which of **30 newspaper columnists** wrote a given article, using TF-
 
 **Insight:** the most predictive features are largely *topical* (team names for sports writers, medical vocabulary for health writers, candidate names for political columnists) — on this dataset topic is a strong proxy for authorship, which is discussed as a limitation in the report.
 
+<p align="center">
+  <img src="docs/confusion_matrix.png" width="640" alt="Confusion matrix of the word TF-IDF logistic regression on the 300-article test set">
+</p>
+
+<sub>Confusion matrix on the 300-article test set (word TF-IDF model). Most errors cluster in a few author pairs, e.g. author 9 is often predicted as author 11.</sub>
+
 ## 🔍 Pipeline
 1. **Load** — articles grouped by author directory
 2. **Preprocess** — tokenisation, lowercasing, stop-word handling (NLTK)
